@@ -3,7 +3,7 @@ import time
 from selenium import webdriver
 from random import seed
 from random import random
-times=int(input("Enter times"))
+times=int(input("Enter times :"))
 with open("driverPath", "r") as f:
     drivePath = f.read()
 print(drivePath)
@@ -15,7 +15,7 @@ cat=driver.find_element_by_class_name('cat-img')
 while(times>0):
     seed(times)
     cat.click()
-    time.sleep(0.01)
+    time.sleep(0.0001)
     times-=1
 #times=driver.find_element__by_class_name('counter rot')
 show=driver.find_element_by_class_name('show')
